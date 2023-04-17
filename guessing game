@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.Math;
+class prctice1{
+    public static void main(String[]args){
+        Scanner sc= new Scanner(System.in);
+        int  carryon;
+        do{
+        System.out.println("guess a number ");
+        int num=sc.nextInt();
+        double a=Math.random();
+        double b=a*10;
+        double ran=Math.floor(b);
+        int ran1=(int)ran;
+        System.out.println("i am guessing "+ran1);
+        if(num==ran){
+        System.out.println("hurrah your choices are similar to mine");}
+        else
+        System.out.println("oops we guessed wrong choices");
+        System.out.println("do u wanna try again\nif yes press 1 or else press 0");
+        carryon=sc.nextInt();
+        if(carryon==0){
+            System.out.println("bye!!!!");
+        }
+        }while(carryon==1);
+    }
+}
